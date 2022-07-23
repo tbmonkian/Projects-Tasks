@@ -1,8 +1,7 @@
 import app from './app.js';
 import { sequelize } from './database/database.js';
 
-// import './models/Project.js';
-// import './models/Task.js'; La idea no es crear las tablas acá al inicio, sino en las rutas cuando se pida.
+const PORT= 3000;
 
 async function main(){
     try{
@@ -11,8 +10,8 @@ async function main(){
         await sequelize.sync() //sincroniza con la db
 //si no existen tablas las crea, si ya existen no hace nada.
 //models.sync() xa el modelo, sequelize.sync() para todos los modelos juntos.
-        app.listen(3000);
-        console.log('Server is listening on port ', 3000);
+        app.listen(PORT);
+        console.log('Server is listening on port: ', PORT);
     } catch (error) {
         console.log('Unable to connect to the database: ',error);
     }
