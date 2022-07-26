@@ -4,7 +4,11 @@ import { Task } from "../models/Task.js";
 export const getProjects = async (req, res)=>{
     try{
         const projects = await Project.findAll(); //me trae todas las rows de la tabla en un array
+        // if (!projects){
+        //     res.send('No existen projects aún para mostrar');
+        // } else{
         res.json(projects);
+        //}
     } catch(error){
         return res.status(500).json({message:error.message});
     }
