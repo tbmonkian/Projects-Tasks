@@ -1,5 +1,16 @@
-PERN stack.
+REST API construída con PERN stack.
 Back end using JS with Node.js, Express, ORM: Sequelize, Postgresql.
+
+Creo una db en psql.
+Construyo proyectos con los schemas de Sequelize.
+Creo tareas con los schemas de Sequelize.
+Cada proyecto está en relación de uno a muchos con las tareas.
+
+Utilizo los verbos HTTP: GET, POST, PUT y DELETE.
+
+Los proyectos y las tareas tienen sus rutas definidas de acuerdo al verbo HTTP.
+
+Hay una ruta que combina proyectos y tareas: nos devuelve las tareas de un id de proyecto.
 
 Modularización.
     Utilizo al máximo la modularización que me permite la tecnología. Esto facilita la comprensión de cada módulo, evitando código spaghetti.
