@@ -41,5 +41,5 @@ SRC
     También en src creo los archivos:
     app.js: instancio y exporto express con nombre app, traigo archivos que contienen rutas para cada model
     index.js:   traigo la instancia de app y la de sequelize q hago en database.js
-                dentro de una function, a la instancia de sequelize le meto el método sync()
+                dentro de una function async, a la instancia de sequelize le meto el método sync()
                 Pongo a escuchar en puerto PORT las peticiones del cliente.
